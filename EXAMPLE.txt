@@ -1,0 +1,80 @@
+====================PROJECT 1 - About-me WebPage========================
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+</head>
+<body>
+   <center>
+    <h1>About Me</h1>
+    <p>Introduce yourself here.</p>
+  </center>
+</body>
+</html>
+
+STEPS:
+
+STEP ONE: On a new line, type the document declaration to indicate that it’s an ‘html’ document.
+CODE: ‘<!DOCTYPE html>’
+
+STEP TWO: On a new line, type the opening ‘html’ tag.
+ CODE:‘<html>’ 
+
+STEP THREE: On a new line, type the opening ‘head’ tag.
+ CODE:‘<head>’
+
+STEP FOUR: On a new line, type the opening ‘title’ tag.
+ CODE:‘<title>’
+
+STEP FIVE: On the same line, after the greater than symbol ‘>’ add the description.
+ CODE:‘<title>About Me’
+
+
+STEP SIX: On the same line, add the closing ‘title’ tag .
+ CODE:  <title>About Me</title>’
+
+
+STEP SEVEN: On a new line, type the closing ‘head’ tag .
+ CODE:‘ </head> ’
+
+
+STEP EIGHT: On a new line, type the opening  ‘body’ tag .
+ CODE:‘<body>’
+
+
+STEP NINE: On a new line, type the opening  ‘center’ tag.
+ CODE:‘<center>’
+
+
+STEP TEN: On a new line, type the opening heading 1 tag ‘h1’.
+ CODE:    ‘<h1>’
+
+
+STEP ELEVEN: On the same line, after the greater than symbol ‘>’ add the description.
+ CODE: ‘<h1>About Me’
+
+
+STEP TWELVE: On the same line, add the closing  heading 1 tag ‘h1’ .
+ CODE: ‘<h1>About Me</h1>’
+
+
+STEP THIRTEEN: On a new line, type the opening paragraph tag ‘p’.
+ CODE: ‘<P>’
+
+
+STEP FOURTEEN: On the same line, after the greater than symbol ‘>’ add the description.
+ CODE: ‘<p>Introduce yourself here.’
+
+
+STEP FIFTEEN: On the same line, add the closing paragraph tag ‘p’ .
+ CODE: ‘<p>Introduce yourself here.</p>’
+
+STEP SIXTEEN: On a new line, type the closing ‘center’ tag .
+ CODE:‘</center>’
+
+STEP SEVENTEEN: On a new line, type the closing ‘body’ tag .
+ CODE:‘</body>’
+
+
+STEP EIGHTEEN: On a new line, type the closing ‘html’ tag .
+ CODE:‘</html>’
