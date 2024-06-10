@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEEB; /* Sky blue background */
+        }
+
+        .apple {
+            position: relative;
+            width: 200px;
+            height: 220px;
+            background-color: red; /* Red color */
+            border-radius: 50% 50% 40% 40%; /* Make the bottom a bit flatter */
+            box-shadow: inset -10px -10px 20px rgba(255, 0, 0, 0.5), inset 10px 10px 20px rgba(200, 0, 0, 0.5); /* Texture effect */
+        }
+
+        .stem {
+            width: 10px;
+            height: 40px;
+            background-color: #8B4513; /* Brown color for the stem */
+            border-radius: 5px;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .leaf {
+            width: 50px;
+            height: 30px;
+            background-color: #228B22; /* Green color for the leaf */
+            border-radius: 25px 25px 0 25px;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-30deg);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body>
+    <div class="apple">
+        <div class="stem"></div>
+        <div class="leaf"></div>
+    </div>
+</body>
+</html>

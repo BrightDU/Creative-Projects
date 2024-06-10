@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEEB; /* Sky blue background */
+        }
+
+        .orange {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: orange; /* Orange color */
+            border-radius: 50%;
+            box-shadow: inset -10px -10px 20px rgba(255, 165, 0, 0.5), inset 10px 10px 20px rgba(255, 140, 0, 0.5); /* Texture effect */
+        }
+
+        .stem {
+            width: 20px;
+            height: 40px;
+            background-color: #8B4513; /* Brown color for the stem */
+            border-radius: 10px;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .leaf {
+            width: 40px;
+            height: 20px;
+            background-color: #228B22; /* Forest green color for the leaf */
+            border-radius: 20px 20px 0 20px;
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-30deg);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body>
+    <div class="orange">
+        <div class="stem"></div>
+        <div class="leaf"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Dog</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87ebc1; /* Sky blue background */
+        }
+
+        .dog {
+            position: relative;
+            width: 200px;
+            height: 200px;
+        }
+
+        .dog .body {
+            position: absolute;
+            width: 140px;
+            height: 100px;
+            background-color: #d2691e; /* Chocolate color */
+            border-radius: 50px 50px 0 0;
+            top: 50px;
+            left: 30px;
+        }
+
+        .dog .head {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background-color: #d2691e; /* Chocolate color */
+            border-radius: 50%;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dog .ear {
+            position: absolute;
+            width: 30px;
+            height: 60px;
+            background-color: #8b4513; /* SaddleBrown color */
+            border-radius: 50% 50% 0 0;
+        }
+
+        .dog .ear.left {
+            top: 10px;
+            left: -20px;
+            transform: rotate(30deg);
+        }
+
+        .dog .ear.right {
+            top: 10px;
+            right: -20px;
+            transform: rotate(-30deg);
+        }
+
+        .dog .eye {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .dog .eye.left {
+            top: 30px;
+            left: 25px;
+        }
+
+        .dog .eye.right {
+            top: 30px;
+            right: 25px;
+        }
+
+        .dog .pupil {
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            background-color: black;
+            border-radius: 50%;
+            top: 4px;
+            left: 4px;
+        }
+
+        .dog .nose {
+            position: absolute;
+            width: 20px;
+            height: 15px;
+            background-color: black;
+            border-radius: 50% 50% 0 0;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dog .mouth {
+            position: absolute;
+            width: 40px;
+            height: 20px;
+            background-color: #d2691e; /* Chocolate color */
+            border-radius: 0 0 20px 20px;
+            top: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .dog .tail {
+            position: absolute;
+            width: 20px;
+            height: 70px;
+            background-color: #d2691e; /* Chocolate color */
+            border-radius: 50% 50% 0 0;
+            top: 20px;
+            left: 160px;
+            transform: rotate(45deg);
+        }
+
+        .dog .leg {
+            position: absolute;
+            width: 20px;
+            height: 50px;
+            background-color: #d2691e; /* Chocolate color */
+            border-radius: 20px 20px 0 0;
+            bottom: 0;
+        }
+
+        .dog .leg.front-left {
+            left: 40px;
+        }
+
+        .dog .leg.front-right {
+            left: 80px;
+        }
+
+        .dog .leg.back-left {
+            left: 100px;
+        }
+
+        .dog .leg.back-right {
+            left: 140px;
+        }
+    </style>
+</head>
+<body>
+    <div class="dog">
+        <div class="body"></div>
+        <div class="head">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="eye left">
+                <div class="pupil"></div>
+            </div>
+            <div class="eye right">
+                <div class="pupil"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth"></div>
+        </div>
+        <div class="tail"></div>
+        <div class="leg front-left"></div>
+        <div class="leg front-right"></div>
+        <div class="leg back-left"></div>
+        <div class="leg back-right"></div>
+    </div>
+</body>
+</html>

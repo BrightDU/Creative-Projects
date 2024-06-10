@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212; /* Light grey background */
+}
+
+.lightbulb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bulb {
+    width: 100px;
+    height: 150px;
+    background-color: #ffff99; /* Light yellow color for the bulb */
+    border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+    position: relative;
+    box-shadow: 0 0 20px rgba(255, 255, 153, 0.5); /* Glow effect */
+}
+
+.filament {
+    width: 20px;
+    height: 60px;
+    background-color: #ffcc00; /* Yellow filament */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5); /* Glow effect */
+}
+
+.base {
+    width: 60px;
+    height: 30px;
+    background-color: #333333; /* Dark grey base */
+    border-radius: 0 0 15px 15px;
+    margin-top: -10px;
+}

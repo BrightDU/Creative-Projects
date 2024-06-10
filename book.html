@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Book</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #121212; /* Light yellow background */
+        }
+
+        .book {
+            width: 400px;
+            height: 300px;
+            position: relative;
+            perspective: 1000px;
+        }
+
+        .cover, .page {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            transform-style: preserve-3d;
+            transform-origin: left;
+            border-radius: 5px;
+        }
+
+        .cover {
+            background-color: #8b4513; /* SaddleBrown cover */
+            transform: rotateY(-45deg);
+            backface-visibility: hidden;
+            z-index: 2;
+        }
+
+        .cover::before {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            background-color: rgba(255, 255, 255, 0.5);
+            top: 10%;
+            left: 10%;
+            border: 2px solid #8b4513;
+            border-radius: 5px;
+        }
+
+        .page {
+            background-color: #fff;
+            transform: rotateY(-15deg);
+            backface-visibility: hidden;
+            z-index: 1;
+        }
+
+        .page::before {
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 100%;
+            background-color: #d2b48c; /* Tan color for the edge of the pages */
+            left: 0;
+        }
+
+        .back-cover {
+            background-color: #8b4513; /* SaddleBrown cover */
+            transform: rotateY(-135deg);
+            backface-visibility: hidden;
+            z-index: 0;
+        }
+
+        .back-cover::before {
+            content: '';
+            position: absolute;
+            width: 80%;
+            height: 80%;
+            background-color: rgba(255, 255, 255, 0.5);
+            top: 10%;
+            left: 10%;
+            border: 2px solid #8b4513;
+            border-radius: 5px;
+        }
+
+        .spine {
+            width: 10px;
+            height: 100%;
+            background-color: #8b4513; /* SaddleBrown spine */
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            border-radius: 5px 0 0 5px;
+        }
+
+        .spine::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.2);
+            left: 0;
+            top: 0;
+            border-radius: 5px 0 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="book">
+        <div class="cover"></div>
+        <div class="page"></div>
+        <div class="spine"></div>
+        <div class="back-cover"></div>
+    </div>
+</body>
+</html>

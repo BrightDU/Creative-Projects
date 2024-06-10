@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ladybug</title>
+    <style type="text/css">
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #228B22; /* Sky blue background */
+        }
+
+        @keyframes walk {
+            0%, 100% { transform: rotate(15deg); }
+            50% { transform: rotate(-15deg); }
+        }
+
+        @keyframes walk-reverse {
+            0%, 100% { transform: rotate(-15deg); }
+            50% { transform: rotate(15deg); }
+        }
+
+        .bug {
+            position: relative;
+            width: 200px;
+            height: 300px;
+        }
+
+        .head {
+            width: 80px;
+            height: 80px;
+            background-color: #000000; /* Black head */
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+
+        .body {
+            width: 120px;
+            height: 200px;
+            background-color: #C02942; /* Forest green body */
+            border-radius: 60px / 100px;
+            position: absolute;
+            top: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .spot {
+            width: 20px;
+            height: 20px;
+            background-color: black; /* Black spots */
+            border-radius: 50%;
+            position: absolute;
+        }
+
+
+        .spot1 { top: 10px; right: 30px; }
+        .spot2 { top: 50px; left: 60px; }
+        .spot3 { top: 70px; right: 60px; }
+        .spot4 { top: 30px; right: 80px; }
+        .spot5 { top: 90px; left: 80px; }
+        .spot6 { top: 120px; left: 30px; }
+        .spot7 { top: 150px; left: 45px; }
+
+        .antennas {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .antenna {
+            width: 5px;
+            height: 50px;
+            background-color: #000000; /* Black antennas */
+            position: absolute;
+        }
+
+        .antenna.left {
+            transform: rotate(-45deg);
+            left: -30px;
+        }
+
+        .antenna.right {
+            transform: rotate(45deg);
+            right: -30px;
+        }
+
+        .legs {
+            position: absolute;
+            top: 120px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .leg {
+            width: 10px;
+            height: 100px;
+            background-color: #000000; /* Black legs */
+            position: absolute;
+            animation: walk 1s infinite;
+        }
+
+        .leg1, .leg3, .leg5 {
+            animation: walk-reverse 1s infinite;
+        }
+
+        .leg1 {
+            top: 0;
+            left: -70px;
+        }
+
+        .leg2 {
+            top: 30px;
+            left: -60px;
+        }
+
+        .leg3 {
+            top: 30px;
+            left: 50px;
+        }
+
+        .leg4 {
+            top: 0;
+            left: 60px;
+        }
+
+        .leg5 {
+            top: 100px;
+            left: -60px;
+        }
+
+        .leg6 {
+            top: 100px;
+            left: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="bug">
+        <div class="head"></div>
+        <div class="body">
+        
+            <div class="spot spot1"></div>
+            <div class="spot spot2"></div>
+            <div class="spot spot3"></div>
+            <div class="spot spot4"></div>
+            <div class="spot spot5"></div>
+            <div class="spot spot6"></div>
+            <div class="spot spot7"></div>
+            
+        </div>
+        <div class="antennas">
+            <div class="antenna left"></div>
+            <div class="antenna right"></div>
+        </div>
+        <div class="legs">
+            <div class="leg leg1"></div>
+            <div class="leg leg2"></div>
+            <div class="leg leg3"></div>
+            <div class="leg leg4"></div>
+            <div class="leg leg5"></div>
+            <div class="leg leg6"></div>
+        </div>
+    </div>
+</body>
+</html>

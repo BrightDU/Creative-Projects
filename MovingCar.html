@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Car Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEEB; /* Sky blue background */
+        }
+
+        .road {
+            position: relative;
+            width: 100%;
+            height: 200px;
+            background-color: #444; /* Dark grey road */
+            overflow: hidden;
+        }
+
+        .car {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 150px;
+            height: 80px;
+            background-color: red;
+            border-radius: 20px;
+            animation: moveCar 10s linear infinite; /* Change the animation duration to 10 seconds */
+        }
+
+        .car::before, .car::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .car::before {
+            left: 10px;
+        }
+
+        .car::after {
+            right: 10px;
+        }
+
+        .window {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            width: 90px;
+            height: 40px;
+            background-color: #87CEEB; /* Sky blue window */
+            border-radius: 10px;
+        }
+
+        @keyframes moveCar {
+            0% {
+                left: -150px;
+            }
+            100% {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="road">
+        <div class="car">
+            <div class="window"></div>
+        </div>
+    </div>
+</body>
+</html>

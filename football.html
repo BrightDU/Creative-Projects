@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEEB; /* Sky blue background */
+        }
+
+        .football {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        }
+
+        .hexagon, .pentagon {
+            position: absolute;
+            background-color: black;
+            clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+        }
+
+        .hexagon {
+            width: 60px;
+            height: 60px;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+        }
+
+        .pentagon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .pentagon:nth-child(1) {
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hexagon:nth-child(2) {
+            top: 50%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hexagon:nth-child(3) {
+            top: 50%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hexagon:nth-child(4) {
+            bottom: 20%;
+            left: 35%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hexagon:nth-child(5) {
+            bottom: 20%;
+            left: 65%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hexagon:nth-child(6) {
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .connector {
+            position: absolute;
+            width: 2px;
+            background-color: black;
+            transform-origin: top left;
+        }
+
+        .connector:nth-child(1) {
+            top: 20%;
+            left: 50%;
+            height: 20%;
+            transform: rotate(30deg);
+        }
+
+        .connector:nth-child(2) {
+            top: 20%;
+            left: 50%;
+            height: 20%;
+            transform: rotate(-30deg);
+        }
+
+        .connector:nth-child(3) {
+            top: 40%;
+            left: 25%;
+            height: 30%;
+            transform: rotate(0deg);
+        }
+
+        .connector:nth-child(4) {
+            top: 40%;
+            right: 25%;
+            height: 30%;
+            transform: rotate(0deg);
+        }
+
+        .connector:nth-child(5) {
+            top: 70%;
+            left: 35%;
+            height: 20%;
+            transform: rotate(30deg);
+        }
+
+        .connector:nth-child(6) {
+            top: 70%;
+            right: 35%;
+            height: 20%;
+            transform: rotate(-30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="football">
+        <div class="pentagon"></div>
+        <div class="hexagon"></div>
+        <div class="hexagon"></div>
+        <div class="hexagon"></div>
+        <div class="hexagon"></div>
+        <div class="hexagon"></div>
+        <div class="connector"></div>
+        <div class="connector"></div>
+        <div class="connector"></div>
+        <div class="connector"></div>
+        <div class="connector"></div>
+        <div class="connector"></div>
+    </div>
+</body>
+</html>
