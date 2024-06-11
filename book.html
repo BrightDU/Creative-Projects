@@ -118,3 +118,383 @@
     </div>
 </body>
 </html>
+
+
+<!--
+ 
+Step 👇
+STEP ONE: On a new line, type the document declaration to indicate that it's an 'html' document. 
+   Code... 
+     <!DOCTYPE html>
+ 
+  STEP TWO: On a new line, type the opening <html> tag with the language attribute set to 'en'.
+  Code... 
+    <html lang="en">
+     
+    STEP THREE: On a new line, type the opening 'head' tag.
+  Code... 
+    <head>
+        
+     STEP FOUR: On a new line, type the meta charset tag to specify the character encoding.
+     Code... 
+     <meta charset="UTF-8">
+     
+     STEP FIVE: On a new line, type the meta viewport tag to set the viewport properties.
+     <meta name="viewport"
+     Code... 
+   content="width=device-width, initial-scale=1.0">
+     
+     STEP SIX: On a new line, type the opening 'title' tag, add the description "Open Book" on the same line, and then add the closing 'title' tag.
+     Code... 
+     <title>Open Book</title>
+     
+     STEP SEVEN: On a new line, type the opening style tag with type attribute set to "text/css".
+     Code... 
+     <style type="text/css">
+         
+    STEP EIGHT: On a new line, add the CSS rules for the body tag.body {  
+    
+    Displays an element as a block-level flex container. 
+    Codee... 
+           display: flex;   
+           
+   The justify-content: center, aligns the flex items at the center of the container:
+   Code... 
+           justify-content: center; 
+           
+   The align-items property specifies the default alignment for items inside the flexible container.
+   Code...
+           align-items: center;  
+           
+   The height property sets the height of an element.
+   Code... 
+           height: 100vh; 
+           
+   This paragraph has a margin of 0 pixels on all four sides. 
+   Code... 
+           margin: 0;  
+           
+    
+           background-color: #121212;
+    }
+    
+    
+    STEP NINE: On a new line, add the CSS rules for the book class..book {  
+    
+  
+    
+          
+   Specifies the type of positioning method used for an element
+   Code... 
+          position: relative;   
+          
+   The perspective property is used to give a 3D-positioned element 
+   Code... 
+          perspective: 1000px;       
+   }
+   
+   
+   STEP TEN: On a new line, add the CSS rules for the cover and page classes..cover, .page {   
+   
+   The width property sets the width of an element.
+    Code... 
+          width: 50%;   
+          
+   The height property sets the height of an element.
+   Code... 
+          height: 100%;    
+          
+   Specifies the type of positioning method used for an element
+    Code... 
+          position: absolute;   
+          
+   The top property affects the vertical position of a positioned element.
+   Code... 
+          top: 0;  
+          
+   The transform-style property specifies how nested elements are rendered in 3D space.
+   Code... 
+          transform-style: preserve-3d;   
+          
+   The transform-origin property allows you to change the position of transformed elements.      
+   Code... 
+          transform-origin: left;   
+          
+          
+   The border-radius property defines the radius of the element's corners.
+   Code... 
+          border-radius: 5px;
+   }
+          
+          STEP ELEVEN: On a new line, add the CSS rules for the cover class..cover {   
+          
+   The background color can be specified with a color name.
+   Code... 
+           background-color: #8b4513;   
+           
+   The transform property applies a 2D or 3D transformation to an element.
+   Code... 
+           transform: rotateY(-45deg);   
+           
+  Defines whether or not the back face of an element should be visible when facing the user. 
+  Code... 
+    backface-visibility: hidden;   
+           
+  The z-index property specifies the stack order of an element.
+  Code... 
+           z-index: 2;
+   }
+          
+          
+          STEP TWELVE: On a new line, add the CSS rules for the pseudo-element before the cover class..cover::before {   
+          
+    The content property is used with the ::before and ::after pseudo-elements, to insert generated content.
+   Code... 
+          content: '';  
+          
+    Specifies the type of positioning method used for an element
+    Code... 
+           position: absolute;   
+           
+    The width property sets the width of an element.
+     Code... 
+           width: 80%;   
+           
+   Sets the height of an element
+   Code... 
+           height: 80%;   
+           
+    The background property is a shorthand property for:
+    Code... 
+           background-color: rgba(255, 255, 255, 0.5);
+           
+    Specifies the top position of a positioned element. 
+    Code... 
+           top: 10%;   
+           
+    Specifies the left position of a positioned element. 
+    Code... 
+           left: 10%;    
+           
+    The border property is a shorthand property for:
+    Code... 
+           border: 2px solid #8b4513; 
+           
+    The border-radius property defines the radius of the element's corners.
+    Code... 
+           border-radius: 5px;
+   }
+           
+           STEP THIRTEEN: On a new line, add the CSS rules for the page class..page {    
+           
+   Specifies the background color of an element
+   Code... 
+           background-color: #fff;    
+           
+   Applies a 2D or 3D transformation to an element
+   Code... 
+           transform: rotateY(-15deg);  
+           
+   Defines whether or not the back face of an element should be visible when facing the user. 
+   Code... 
+           backface-visibility: hidden; 
+           
+  Sets the stack order of a positioned element. 
+  Code... 
+           z-index: 1;
+   }
+           
+           STEP FOURTEEN: On a new line, add the CSS rules for the pseudo-element before the page class..page::before {    
+           
+   Used with the :before and :after pseudo-elements, to insert generated content. 
+           Code... 
+           content: '';    
+           
+   Specifies the type of positioning method used for an element (static, relative, absolute or fixed). 
+   Code... 
+           position: absolute;    
+           
+   Sets the width of an element. 
+   Code... 
+           width: 5px;    
+           
+   Sets the height of an element. 
+   Code... 
+           height: 100%;    
+           
+   Specifies the background color of an element
+   Code... 
+           background-color: #d2b48c;    
+           
+   Specifies the left position of a positioned element. 
+    Code... 
+           left: 0;
+   }
+           
+           
+           STEP FIFTEEN: On a new line, add the CSS rules for the back-cover class..back-cover {   
+           
+   Specifies the background color of an element
+   Code... 
+           background-color: #8b4513;    
+           
+   Applies a 2D or 3D transformation to an element
+   Code... 
+           transform: rotateY(-135deg);    
+           
+  Defines whether or not the back face of an element should be visible when facing the user. 
+  Code... 
+           backface-visibility: hidden;   
+           
+  The z-index property specifies the stack order of an element.
+  Code... 
+           z-index: 0;
+   }
+   
+           STEP SIXTEEN: On a new line, add the CSS rules for the pseudo-element before the back-cover class..back-cover::before {    
+           
+   content Used with the :before and :after pseudo-elements, to insert generated content. 
+   Code... 
+           content: '';    
+           
+    Specifies the type of positioning method used for an element (static, relative, absolute or fixed). 
+    Code... 
+           position: absolute;    
+           
+    Sets the width of an element
+    Code... 
+           width: 80%;    
+           
+    Sets the height of an element. 
+    Code... 
+           height: 80%;    
+           
+    Specifies the background color of an element. 
+    Code... 
+           background-color: rgba(255, 255, 255, 0.5);
+           
+    Specifies the top position of a positioned element. 
+    Code... 
+           top: 10%;    left: 10%;    
+           
+    The border property is a shorthand property for:
+    Code... 
+           border: 2px solid #8b4513;  
+           
+    The border-radius property defines the radius of the element's corners.
+    Code... 
+           border-radius: 5px;
+   }
+           
+           STEP SEVENTEEN: On a new line, add the CSS rules for the spine class..spine {   
+           Sets the width of an element
+    Code... 
+           width: 10px;    
+           
+           Sets the height of an element. 
+    Code... 
+           height: 100%;   
+           
+           Specifies the background color of an element. 
+    Code... 
+           background-color: #8b4513;  
+           
+           Specifies the type of positioning method used for an element (static, relative, absolute or fixed). 
+    Code...
+           position: absolute;    
+           
+           Specifies the top position of a positioned element. 
+    Code... 
+           top: 0;    left: 50%;   
+           
+           Moves the element horizontally to the left by 50% of its own width. 
+    Code...
+           transform: translateX(-50%); 
+           
+           The z-index property specifies the stack order of an element.
+    Code...
+           z-index: 3;    
+           
+           The border-radius property defines the radius of the element's corners.
+    Code...
+           border-radius: 5px 0 0 5px;
+  }
+           
+           STEP EIGHTEEN: On a new line, add the CSS rules for the pseudo-element before the spine class..spine::before {    
+           content Used with the :before and :after pseudo-elements, to insert generated content. 
+   Code... 
+           content: '';   
+           
+           Specifies the type of positioning method used for an element (static, relative, absolute or fixed). 
+    Code...
+           position: absolute;   
+           
+           Sets the width of an element
+    Code... 
+           width: 100%;    
+           
+           Sets the height of an element
+    Code... 
+           height: 100%;    
+           
+           Specifies the background color of an element. 
+    Code... 
+           background-color: rgba(0, 0, 0, 0.2);
+           
+           Specifies the left position of a positioned element. 
+    Code...
+           left: 0;    
+           
+           Specifies the top position of a positioned element. 
+    Code...
+           top: 0;    
+           
+           The border-radius property defines the radius of the element's corners.
+    Code...
+           border-radius: 5px 0 0 5px;
+  }
+           
+           STEP NINETEEN: On a new line, close the 'style' tag.
+           Code.. 
+           </style>
+           
+           STEP TWENTY: On a new line, close the 'head' tag.
+           Code.. 
+           </head>
+           
+           STEP TWENTY-ONE: On a new line, type the opening body tag.
+           code.. 
+           <body>
+               
+           STEP TWENTY-TWO: On a new line, type the opening 'div' tag with class "book".
+           Code.. 
+           <div class="book">
+               
+           STEP TWENTY-THREE: On a new line, type the opening 'div' tag with class "cover".
+           Code.. 
+           <div class="cover"></div>
+           
+           STEP TWENTY-FOUR: On a new line, type the opening 'div' tag with class "page".
+           Code.. 
+           <div class="page"></div>
+           
+           STEP TWENTY-FIVE: On a new line, type the opening 'div' tag with class "spine". 
+           Code..
+           <div class="spine"></div>
+           
+           STEP TWENTY-SIX: On a new line, type the opening 'div' tag with class "back-cover".
+           Code.. 
+           <div class="back-cover"></div>
+           
+           STEP TWENTY-SEVEN: On a new line, close the 'div' tag for the book class.
+           Code.. 
+           </div>
+           
+           STEP TWENTY-EIGHT: On a new line, close the 'body' tag.
+           Code.. 
+           </body>
+           
+           STEP TWENTY-NINE: On a new line, close the 'html' tag.
+           Code.. 
+           </html> -->
+           
