@@ -79,3 +79,224 @@
     </div>
 </body>
 </html>
+
+<!--
+==🚕Steps to Create the Moving Car Animation🚕==
+
+STEP ONE: On a new line, type the document declaration to indicate that it’s an ‘html’ document. 📚
+- CODE: `<!DOCTYPE html>` 🚧
+
+STEP TWO: On a new line, type the opening ‘html’ tag and add the `lang` attribute to specify the language of the document. 📚
+- CODE: `<html lang="en">` 🚧
+
+STEP THREE: On a new line, type the opening ‘head’ tag. 📚
+- CODE: `<head>` 🚧
+
+STEP FOUR: On a new line, type the opening ‘meta’ tag to set the character encoding of the document. 📚
+- CODE: `<meta charset="UTF-8">` 🚧
+
+STEP FIVE: On a new line, type another ‘meta’ tag to set the viewport properties for responsive design. 📚
+- CODE: `<meta name="viewport" content="width=device-width, initial-scale=1.0">` 🚧
+
+STEP SIX: On a new line, type the opening ‘title’ tag. 📚
+- CODE: `<title>` 🚧
+
+STEP SEVEN: On the same line, after the greater than symbol ‘>’, add the title of the document. 📚
+- CODE: `Moving Car Animation` 🚧
+
+STEP EIGHT: On the same line, add the closing ‘title’ tag. 📚
+- CODE: `</title>` 🚧
+
+STEP NINE: On a new line, type the opening ‘style’ tag to add internal CSS. 📚
+- CODE: `<style>` 🚧
+
+STEP TEN: Now we will add the CSS code inside the ‘style’ tag to style the body, road, and car elements. First, let's start with the body. On a new line, type the following to open the body CSS block: 📚
+- CODE: `body {` 🚧
+
+STEP ELEVEN: On a new line, type `display: flex;` to use Flexbox for layout. This centers our content horizontally and vertically. 📚
+- CODE: `display: flex;` 🚧
+
+STEP TWELVE: On a new line, type `justify-content: center;` to center the content horizontally. 📚
+- CODE: `justify-content: center;` 🚧
+
+STEP THIRTEEN: On a new line, type `align-items: center;` to center the content vertically. 📚
+- CODE: `align-items: center;` 🚧
+
+STEP FOURTEEN: On a new line, type `height: 100vh;` to set the height of the body to the full height of the viewport. 📚
+- CODE: `height: 100vh;` 🚧
+
+STEP FIFTEEN: On a new line, type `margin: 0;` to remove any default margins. 📚
+- CODE: `margin: 0;` 🚧
+
+STEP SIXTEEN: On a new line, type `background-color: #87CEEB;` to set the background color to sky blue. 📚
+- CODE: `background-color: #87CEEB;` 🚧
+
+STEP SEVENTEEN: On a new line, close the body CSS block by typing `}`. 📚
+- CODE: `}` 🚧
+
+STEP EIGHTEEN: On a new line, open the road CSS block by typing `.road {`. This will style the road element. 📚
+- CODE: `.road {` 🚧
+
+STEP NINETEEN: On a new line, type `position: relative;` to position the road element relative to its normal position. 📚
+- CODE: `position: relative;` 🚧
+
+STEP TWENTY: On a new line, type `width: 100%;` to set the width of the road to 100% of its container. 📚
+- CODE: `width: 100%;` 🚧
+
+STEP TWENTY-ONE: On a new line, type `height: 200px;` to set the height of the road to 200 pixels. 📚
+- CODE: `height: 200px;` 🚧
+
+STEP TWENTY-TWO: On a new line, type `background-color: #444;` to set the background color of the road to dark grey.📚
+- CODE: `background-color: #444;` 🚧
+
+STEP TWENTY-THREE: On a new line, type `overflow: hidden;` to hide any content that overflows the boundaries of the road. 📚
+- CODE: `overflow: hidden;` 🚧
+
+STEP TWENTY-FOUR: On a new line, close the road CSS block by typing `}`. 📚
+- CODE: `}` 🚧
+
+STEP TWENTY-FIVE: On a new line, open the car CSS block by typing `.car {`. This will style the car element. 📚
+- CODE: `.car {` 🚧
+
+STEP TWENTY-SIX: On a new line, type `position: absolute;` to position the car absolutely within its container. 📚
+- CODE: `position: absolute;` 🚧
+
+STEP TWENTY-SEVEN: On a new line, type `bottom: 20px;` to position the car 20 pixels from the bottom of its container. 📚
+- CODE: `bottom: 20px;` 🚧
+
+STEP TWENTY-EIGHT: On a new line, type `left: 0;` to position the car at the left edge of its container. 📚
+- CODE: `left: 0;` 🚧
+
+STEP TWENTY-NINE: On a new line, type `width: 150px;` to set the width of the car to 150 pixels. 📚
+- CODE: `width: 150px;` 🚧
+
+STEP THIRTY: On a new line, type `height: 80px;` to set the height of the car to 80 pixels. 📚
+- CODE: `height: 80px;` 🚧
+
+STEP THIRTY-ONE: On a new line, type `background-color: red;` to set the background color of the car to red. 📚
+- CODE: `background-color: red;` 🚧
+
+STEP THIRTY-TWO: On a new line, type `border-radius: 20px;` to round the corners of the car. 📚
+- CODE: `border-radius: 20px;` 🚧
+
+STEP THIRTY-THREE: On a new line, type `animation: moveCar 10s linear infinite;` to add an animation that moves the car across the screen. 📚
+- CODE: `animation: moveCar 10s linear infinite;` 🚧
+
+STEP THIRTY-FOUR: On a new line, close the car CSS block by typing `}`. 📚
+- CODE: `}` 🚧
+
+STEP THIRTY-FIVE: Now we will style the car’s wheels. On a new line, open the car wheels CSS block by typing `.car::before, .car::after {`. This will target both the `::before` and `::after` pseudo-elements of the car. 📚
+- CODE: `.car::before, .car::after {` 🚧
+
+STEP THIRTY-SIX: On a new line, type `content: '';` to insert content, which in this case will be empty. 📚
+- CODE: `content: '';` 🚧
+
+STEP THIRTY-SEVEN: On a new line, type `position: absolute;` to position the wheels absolutely within the car. 📚
+- CODE: `position: absolute;` 🚧
+
+STEP THIRTY-EIGHT: On a new line, type `bottom: -20px;` to position the wheels 20 pixels below the bottom of the car. 📚
+- CODE: `bottom: -20px;` 🚧
+
+STEP THIRTY-NINE: On a new line, type `width: 40px;` to set the width of the wheels to 40 pixels. 📚
+- CODE: `width: 40px;` 🚧
+
+STEP FORTY: On a new line, type `height: 40px;` to set the height of the wheels to 40 pixels. 📚
+- CODE: `height: 40px;` 🚧
+
+STEP FORTY-ONE: On a new line, type `background-color: black;` to set the background color of the wheels to black. 📚
+- CODE: `background-color: black;` 🚧
+
+STEP FORTY-TWO: On a new line, type `border-radius: 50%;` to make the wheels circular. 📚
+- CODE: `border-radius: 50%;` 🚧
+
+STEP FORTY-THREE: On a new line, close the car wheels CSS block by typing `}`. 📚
+- CODE: `}` 🚧
+
+STEP FORTY-FOUR: On a new line, open the CSS block for the front wheel by typing `.car::before {`. This will style the front wheel of the car. 📚
+- CODE: `.car::before {` 🚧
+
+STEP FORTY-FIVE: On a new line, type `left: 10px;` to position the front wheel 10 pixels from the left side of the car. 📚
+- CODE: `left: 10px;` 🚧
+
+STEP FORTY-SIX: On a new line, close the front wheel CSS block by typing `}`. 📚
+- CODE: `}` 🚧
+
+STEP FORTY-SEVEN: On a new line, open the CSS block for the rear wheel by typing `.car::after {`. This will style the rear wheel of the car. 📚
+- CODE: `.car::after {` 🚧
+
+STEP FORTY-EIGHT: On a new line, type `right: 10px;` to position the rear wheel 10 pixels from the right side of the car. 📚
+- CODE: `right: 10px;` 🚧
+
+STEP FORTY-NINE: On a new line, close the rear wheel CSS block by typing `}`. 📚
+- CODE: `}` 🚧
+
+STEP FIFTY: Now we will style the car’s window. On a new line, open the window CSS block by typing `.window {`. This will style the window element inside the car. 📚
+- CODE: `.window {` 🚧
+
+STEP FIFTY-ONE: On a new line, type `position: absolute;` to position the window absolutely within the car. 📚
+- CODE: `position: absolute;` 🚧
+
+STEP FIFTY-TWO: On a new line, type `top: 10px;` to position the window 10 pixels from the top of the car. 📚
+- CODE: `top: 10px;` 🚧
+
+STEP FIFTY-THREE: On a new line, type `left: 30px;` to position the window 30 pixels from the left side of the car. 📚
+- CODE: `left: 30px;` 🚧
+
+STEP FIFTY-FOUR: On a new line, type `width: 90px;` to set the width of the window to 90 pixels. 📚
+- CODE: `width: 90px;` 🚧
+
+STEP FIFTY-FIVE: On a new line, type `height: 40px;` to set the height of the window to 40 pixels. 📚
+- CODE: `height: 40px;` 🚧
+
+STEP FIFTY-SIX: On a new line, type `background-color: #87CEEB;` to set the background color of the window to sky blue. 📚
+- CODE: `background-color: #87CEEB;` 🚧
+
+STEP FIFTY-SEVEN: On a new line, type `border-radius: 10px;` to round the corners of the window. 📚
+- CODE: `border-radius: 10px;` 🚧
+
+STEP FIFTY-EIGHT: On a new line, close the window CSS block by typing `}`. 📚
+- CODE: `}` 🚧
+
+STEP FIFTY-NINE: Now we will add the keyframes for the car animation. On a new line, open the keyframes block by typing `@keyframes moveCar {`. 📚
+- CODE: `@keyframes moveCar {` 🚧
+
+STEP SIXTY: On a new line, type `0% { left: -150px; }` to set the starting position of the car off the screen to the left. 📚
+- CODE: `0% { left: -150px; }` 🚧
+
+STEP SIXTY-ONE: On a new line, type `100% { left: 100%; }` to set the ending position of the car off the screen to the right. 📚
+- CODE: `100% { left: 100%; }` 🚧
+
+STEP SIXTY-TWO: On a new line, close the keyframes block by typing `}`. 📚
+- CODE: `}` 🚧
+
+STEP SIXTY-THREE: On a new line, close the `style` tag. 📚
+- CODE: `</style>` 🚧
+
+STEP SIXTY-FOUR: On a new line, close the `head` tag. 📚
+- CODE: `</head>` 🚧
+
+STEP SIXTY-FIVE: On a new line, open the `body` tag. 📚
+- CODE: `<body>` 🚧
+
+STEP SIXTY-SIX: Inside the body tag, we will now add the HTML elements for the road and the car. On a new line, type `<div class="road">`. This creates a container for the road. 📚
+- CODE: `<div class="road">` 🚧
+
+STEP SIXTY-SEVEN: On a new line, add the car element inside the road container by typing `<div class="car">`. 📚
+- CODE: `<div class="car">` 🚧
+
+STEP SIXTY-EIGHT: On a new line, add the window element inside the car container by typing `<div class="window"></div>`. 📚
+- CODE: `<div class="window"></div>` 🚧
+
+STEP SIXTY-NINE: On a new line, close the car container by typing `</div>`. 📚
+- CODE: `</div>` 🚧
+
+STEP SEVENTY: On a new line, close the road container by typing `</div>`. 📚
+- CODE: `</div>` 🚧
+
+STEP SEVENTY-ONE: On a new line, close the body tag by typing `</body>`. 📚
+- CODE: `</body>` 🚧
+
+STEP SEVENTY-TWO: On a new line, close the html tag by typing `</html>`. 📚
+- CODE: `</html>` 🚧
+
+-->
