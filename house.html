@@ -4,7 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colorful House</title>
-    <link rel="stylesheet" href="house.css">
+ 
+  <style>
+      
+      body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #87CEEB; /* Sky blue background */
+}
+
+.house {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #FF6347; /* Tomato color for house body */
+}
+
+.roof {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid #8B4513; /* Saddle brown for roof */
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+
+.body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #FF6347; /* Tomato color for house body */
+    border: 5px solid #8B4513; /* Border for house body */
+}
+
+.window {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #FFFFFF; /* White windows */
+    border: 5px solid #8B4513; /* Border for windows */
+}
+
+.window.left {
+    top: 20px;
+    left: 20px;
+}
+
+.window.right {
+    top: 20px;
+    right: 20px;
+}
+
+.door {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background-color: #D2B48C; /* Tan color for door */
+    border: 5px solid #8B4513; /* Border for door */
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ground {
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    background-color: #32CD32; /* Lime green for ground */
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  </style>
 </head>
 <body>
     <div class="house">
@@ -18,3 +94,73 @@
     </div>
 </body>
 </html>
+
+<!--
+STEPS:
+
+STEP ONE: On a new line, type the document declaration to indicate that it’s an ‘html’ document.
+CODE: ‘<!DOCTYPE html>’
+
+STEP TWO: On a new line, type the opening ‘html’ tag.
+ CODE:‘<html>’ 
+
+STEP THREE: On a new line, type the opening ‘head’ tag.
+ CODE:‘<head>’
+
+STEP FOUR: On a new line, type the opening ‘title’ tag.
+ CODE:‘<title>’
+
+STEP FIVE: On the same line, after the greater than symbol ‘>’ add the description.
+ CODE:‘<title>About Me’
+
+
+STEP SIX: On the same line, add the closing ‘title’ tag .
+ CODE:  <title>About Me</title>’
+
+
+STEP SEVEN: On a new line, type the closing ‘head’ tag .
+ CODE:‘ </head> ’
+
+
+STEP EIGHT: On a new line, type the opening  ‘body’ tag .
+ CODE:‘<body>’
+
+
+STEP NINE: On a new line, type the opening  ‘center’ tag.
+ CODE:‘<center>’
+
+
+STEP TEN: On a new line, type the opening heading 1 tag ‘h1’.
+ CODE:    ‘<h1>’
+
+
+STEP ELEVEN: On the same line, after the greater than symbol ‘>’ add the description.
+ CODE: ‘<h1>About Me’
+
+
+STEP TWELVE: On the same line, add the closing  heading 1 tag ‘h1’ .
+ CODE: ‘<h1>About Me</h1>’
+
+
+STEP THIRTEEN: On a new line, type the opening paragraph tag ‘p’.
+ CODE: ‘<P>’
+
+
+STEP FOURTEEN: On the same line, after the greater than symbol ‘>’ add the description.
+ CODE: ‘<p>Introduce yourself here.’
+
+
+STEP FIFTEEN: On the same line, add the closing paragraph tag ‘p’ .
+ CODE: ‘<p>Introduce yourself here.</p>’
+
+STEP SIXTEEN: On a new line, type the closing ‘center’ tag .
+ CODE:‘</center>’
+
+STEP SEVENTEEN: On a new line, type the closing ‘body’ tag .
+ CODE:‘</body>’
+
+
+STEP EIGHTEEN: On a new line, type the closing ‘html’ tag .
+ CODE:‘</html>’
+
+-->
