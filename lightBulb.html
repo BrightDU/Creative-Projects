@@ -4,7 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Light Bulb</title>
-    <link rel="stylesheet" href="lightBulb.css">
+
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+}
+
+.lightbulb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bulb {
+    width: 100px;
+    height: 150px;
+    background-color: #ffff99; 
+    border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+    position: relative;
+    box-shadow: 0 0 20px rgba(255, 255, 153, 0.5);
+}
+
+.filament {
+    width: 20px;
+    height: 60px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5); 
+}
+
+.base {
+    width: 60px;
+    height: 30px;
+    background-color: #333333; 
+    border-radius: 0 0 15px 15px;
+    margin-top: -10px;
+}
+    </style>
+
 </head>
 <body>
     <div class="lightbulb">
@@ -15,3 +61,235 @@
     </div>
 </body>
 </html>
+
+<!--
+
+STEPS :
+NOTE : YOU HAVE TO ENTER/TYPE IN THE HTML CODES FIRST BEFORE ADDING THE CSS CODES (STYLE)
+
+STEP ONE: On a new line, type the document declaration to indicate that it’s an ‘html’ document.
+CODE: <!DOCTYPE html>
+
+STEP TWO: On a new line, type the opening and also specify the language of the html ‘html lang="en">’ tag.
+ CODE:<html lang="en">
+
+STEP THREE: On a new line, type the opening ‘head’ tag.
+ CODE:‘<head>’
+
+STEP FOUR: On a new  line,set the character encoding to 'UTF-8'
+ CODE: <meta charset="UTF-8">  
+
+STEP FIVE: On a new line,Set the width of the screen the the scale of 1.0
+ CODE:  '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+   
+STEP SIX: On a new line, type the opening ‘title’ tag.
+ CODE:‘<title>’
+
+STEP SEVENE: On the same line, after the greater than symbol ‘>’ add the description.
+ CODE:‘<title>Light bulb’
+
+STEP EIGHT: On the same line, add the closing ‘title’ tag .
+ CODE:  <title>Light bulb</title
+
+STEP NINE : On a new line,type in the opening tag for the css codes 'style'
+ CODE: <style>
+
+STEP TEN : On a new line,type in the 'body' selector and open the curly bracket  
+ CODE : body {
+
+ }
+
+STEP ELEVEN: On a new line,set the display to be 'flex'
+ CODE:  display: flex;
+
+STEP TWELEVE: On a new line,Justify the contents of the body to center
+ CODE: justify-content: center; 
+
+STEP THIRTEEN : On a new line ,align the items to center
+CODE : align-items: center;
+
+STEP FOURTEEN : On a new line, set the height to 100vh
+CODE: height: 100vh;
+
+STEP FIFTTEEN :On a new line,set the margin to 0
+ CODE: margin: 0;
+
+STEP SIXTEEN: On a new line,give it a background color 
+CODE :background-color: #121212;
+
+STEP SEVENTEEN :On a new line, close the curly bracket
+CODE: }
+
+STEP EIGHTEEN :Give a line space
+CODE:
+
+STEP NINETEEN : On a new line type in the next selector ,which is a class '.lightbulb'.
+CODE: .lightbulb
+
+STEP TWENTY : On the samme line, open the  curly bracket '{'
+CODE: {
+
+STEP TWENTY-ONE :Move to the next line and set the display to 'flex'
+CODE :  display: flex;   
+
+STEP TWENTY-TWO :On a new line, set the flex direction to 'column'
+CODE :  flex-direction: column;
+
+STEP TWENTY-THREE:On a new line,align the items to 'center'
+ CODE:  align-items: center;
+
+STEP TWENTY-FOUR:Now close the curly bracket on the next line '}' 
+ CODE : '}'
+
+STEP TWENTY-FIVE:On a new line,type in the next selector,which is also a class '.bulb'
+ CODE :  .bulb
+
+STEP TWENTY-SIX: On the same line,open a curly bracket '{'
+ CODE:  {
+
+STEP TWENTY-SEVEN : On the next line,set the width property to '100px'
+ CODE :  width: 100px;
+
+STEP TWENTY-EIGHT: On a new line set the height to '150px'
+ CODE :   height: 150px;
+
+STEP TWENTY-NINE :On a new line, Gve it a background color
+ CODE :  background-color: #ffff99; 
+
+STEP THIRTY :On a new line, Set the border radius of the four edges to '50% 50% 50% 50% / 40% 40% 60% 60%'
+CODE :  border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+
+STEP THIRTY-ONE : On a new line, Setthe position to 'relative'
+ CODE :    position: relative;
+
+STEP THIRTY-TWO : On a new line, Give it a box shadow
+ CODE : box-shadow: 0 0 20px rgba(255, 255, 153, 0.5);
+
+STEP THIRTY-THREE :  Now on the next line, close the curly bracket '}'
+ CODE : '}'
+
+STEP THIRTY-FOUR: On the next line,tye in the next selector, which is also a class '.filament'
+ CODE : .filament
+
+STEP THIRTY-FIVE : On the same line, open a curly bracket '{'
+ CODE : {
+
+STEP THIRTY-SIX : On a new line, set the width to '20px'
+ CODE :   width: 20px;
+
+STEP THIRTY-SEVEN : On a new line, set the height to  '60px'
+ CODE :   height: 60px;
+
+STEP THIRTY-EIGHT : On a new line, give it a background color
+ CODE :   background-color: #ffcc00;
+
+STEP THIRTY-NINE : On a new line, set the border-radius to  '50px'
+ CODE :   border-radius: 50%;
+
+STEP FOURTY :  On a new line,position it to 'absolute'
+ CODE :   position: absolute;
+
+STEP FOURTY-ONE: On a new line, set the top to '50%' 
+ CODE :  top: 50%;
+  
+STEP FOURTY-TWO: On a new line, give the left a '50%'
+ CODE :   left: 50%;
+
+STEP FOURTY-THREE: On a new line, set the transform to 'translate(-50%, -50%)' 
+ CODE :  transform: translate(-50%, -50%);
+
+STEP FOURTY-FOUR: On a new line, give it a box shadow 
+ CODE :   box-shadow: 0 0 20px rgba(255, 204, 0, 0.5); 
+
+STEP FOURTY-FIVE: Now close the curly bracket on the next line '}' 
+ CODE :  }
+
+STEP FOURTY-SIX: Moving on to the next line,type in the next selector '.base'
+ CODE: .base
+
+STEP FOURTY-SEVEN: On the same line,oopen a curly bracket '{'
+ CODE : { 
+
+STEP FOURTY-EIGHT:On a new line,set the width property to '60px' 
+ CODE :   width: 60px;
+
+STEP FOURTY-NINE: On a new line,set the height to '30px' 
+ CODE :   height: 30px;
+
+STEP FIFTY: On a new line,give it a background color 
+ CODE:   background-color: #333333; 
+
+STEP FIFTY-ONE:On a new line,set the border radius to '0 0 15px 15px' 
+ CODE :   border-radius: 0 0 15px 15px;
+
+STEP FIFTY-TWO :On a new line,set the margin top to '-10px' 
+CODE:   margin-top: -10px;
+
+STEP FIFTY-THREE: On a new line,close the curly bracket '}' 
+ CODE: } 
+
+STEP FIFTY-FOUR :Now on a new line, close the CSS styles tag '/style' 
+ CODE: </style> 
+
+STEP FIFTY-FIVE: Give a line space and close the head tag '/head'      
+ CODE: 
+         </head> 
+
+AFTER INPUTING THE CSS CODES, WE WILL NOW MOVE ON TO THE HTML CODES
+   HTML CODES / TAGS
+
+STEP ONE: On a new line, type the body opening tag '<body>' 
+ CODE: <body>
+
+STEP TWO:On a new line, type in the div element 'div'
+ CODE:   <div>
+
+STEP THREE: Inside the div tag, write the class identifier  class=""   
+  CODE:   <div class="">
+
+STEP FOUR:Inside the double quote, type "lightbulb"
+ CODE :    <div class="lightbulb">
+
+STEP FIVE:On a new line, type in the div element 'div'
+ CODE:   <div>
+
+STEP SIX: Inside the div tag, write the class identifier  class=""   
+ CODE:   <div class="">
+
+STEP SEVEN: Inside the double quote, type "bulb"
+ CODE :    <div class="bulb">
+
+STEP EIGHT: On a new line, type in the div element 'div'
+ CODE:   <div>
+
+STEP NINE : Inside the div tag, write the class identifier  class=""   
+ CODE:   <div class="">
+
+STEP TEN:  Inside the double quote, type "filament"
+CODE :    <div class="filament">
+
+STEP ELEVEN: On the next line, close the div tag for the bulb identifier  '/div'  
+ CODE:   </div>
+
+STEP TWELEVE: On a new line, type in the div element 'div'
+ CODE:   <div>
+
+STEP THIRTEEN:  Inside the div tag, write the class identifier  class=""   
+CODE:   <div class="">
+
+STEP FOURTEEN:  Inside the double quote, type "base"
+CODE :    <div class="base">
+
+STEP FIFTTEEN : On the same line,close the div tag '/div'    
+CODE:  <div class="base"></div>
+
+STEP SIXTEEN: On the next line write the div closing tag for the lightbulb identifier '/div'
+ CODE:  </div>
+
+STEP SEVENTEEN: On a new line,close the body tag '/body' 
+ CODE : </body>
+
+STEP EIGHTEEN: On the next line, close the html tag '/html'
+CODE :</html>
+
+-->

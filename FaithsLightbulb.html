@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Bulb</title>
+
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+}
+
+.lightbulb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bulb {
+    width: 100px;
+    height: 150px;
+    background-color: #ffff99; 
+    border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+    position: relative;
+    box-shadow: 0 0 20px rgba(255, 255, 153, 0.5);
+}
+
+.filament {
+    width: 20px;
+    height: 60px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.5); 
+}
+
+.base {
+    width: 60px;
+    height: 30px;
+    background-color: #333333; 
+    border-radius: 0 0 15px 15px;
+    margin-top: -10px;
+}
+    </style>
+
+</head>
+<body>
+    <div class="lightbulb">
+        <div class="bulb">
+            <div class="filament"></div>
+        </div>
+        <div class="base"></div>
+    </div>
+</body>
+</html>
+
+
+<!--
+
+STEPS TO CREATE A LIGHTBULB;
+
+STEP ONE: On a new line, type the document declaration to indicate that it’s an ‘html’ document.
+CODE: ‘<!DOCTYPE html>’
+
+STEP TWO: On a new line, type the opening and also specify the language of the html ‘html lang="en">’ tag.
+ CODE:‘<html lang="en">’ 
+
+STEP THREE: On a new line, type the opening ‘head’ tag.
+ CODE:‘<head>’
+
+STEP FOUR: On a new  line,set the character encoding to 'UTF-8'
+ CODE: '<meta charset="UTF-8">'  
+
+STEP FIVE: On a new line,Set the width of the screen to the scale of 1.0
+ CODE:  '<meta name="viewport" content="width=device-width, initial-scale=1.0">'
+   
+STEP SIX: On a new line, type the opening ‘title’ tag.
+ CODE:‘<title>’
+
+STEP SEVEN: On the same line, after the greater than symbol ‘>’ add the description.
+ CODE:‘<title>Light bulb’
+
+STEP EIGHT: On the same line, add the closing ‘title’ tag .
+ CODE:  '<title>Light bulb</title>
+
+ STEP NINE: On a new line, type in the opening tag for the css codes 'styles'
+CODE: <style>
+
+STEP TEN:We will add the CSS code inside the style tah. On a new line, type the body with a open curly bracket
+CODE: body {
+
+STEP ELEVEN: On a new line, type and set the display property of the body element to be "flex" and put your statement terminator ';'
+CODE: display: flex;
+
+STEP TWELVE: On a new line, type the justify-content propery of the body to "center" and put your statement terminator
+CODE: justify-content: center;
+
+STEP THIRTEEN: On a new line, type the align-items property of the body to "center" and put your statement terminator
+CODE: align-items: center;
+
+STEP FOURTEEN: On a new line, type the height property of the body to be "100 viewport height" and put your statement terminator
+CODE: height: 100vh;
+
+STEP FIFTEEN: On a new line, type the margin property of the body to "0" and put your statement terminator
+CODE: margin: 0;
+
+STEP SIXTEEN: On a new line, type the background-color property of the body to "#121212" and put your statement terminator
+CODE: background-color: #121212;
+
+STEP SEVENTEEN: On a new line, type the closing curly bracket "}"
+CODE: }
+
+STEP EIGHTEEN: On a new line, type the next seletor which is a class ".lightbulb" with a open curly bracket
+CODE: .lightbulb {
+
+STEP NINETEEN: On a new line, type the display property of the lightbulb to "flex" and put your statement terminator
+CODE: display: flex;
+
+STEP TWENTY: On a new line, type the flex-direction property of the lightbulb to "column" and put your statement terminator
+CODE: flex-direction: column;
+
+STEP TWENTY-ONE: On a new line, type the align-items property of the lightbulb to "center" and put your statement terminator
+CODE: align-items: center;
+
+STEP TWENTY-TWO: On a new line, type the closing curly bracket "}"
+CODE: }
+
+STEP TWENTY-THREE: On a new line, type the next seletor which is a class ".bulb" with a open curly bracket '{'
+CODE: .bulb {
+
+STEP TWENTY-FOUR: On a new line, type the width property of the .bulb to "100px" amd put the statement terminator
+CODE: width: 100px;
+
+STEP TWENTY-FIVE: On a new line, type the height property of the bulb to "150px" and put the statement terminator
+CODE: height: 150px;
+
+STEP TWENTY-SIX: On a new line, type the background-color property of the bulb to "#ffff99" and put the statement terminator
+CODE: background-color: #ffff99;
+
+STEP TWENTY-SEVEN: On a new line, type the border-raduis property of the bulb to "50% 50% 50% 50% / 40% 40% 60% 60%" to create a round shape. And then put the statement terminator
+CODE: border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+
+STEP TWENTY-EIGHT: On a new line, type the position property of the bulb to "relative" and put the statement terminator
+CODE: position: relative;
+
+STEP TWENTY-NINE: On a new line, type the box-shadow property of the bulb to "0 0 20px rgba(255, 255, 153, 0.5)" to create a glow effect. And then put your statement terminator
+CODE: box-shadow: 0 0 20px rgba(255, 255, 153, 0.5);
+
+STEP THIRTY: On a new line, type the closing curly bracket "}"
+CODE: }
+
+STEP THIRTY-ONE: On a new line, type the next selector which is a class ".filament" with an open curly bracket '{'
+CODE: .filament {
+
+STEP THIRTY-TWO: On a new line, type the width property of the filament to "20px". and put the statement terminator
+CODE: width: 20px;
+
+STEP THIRTY-THREE: On a new line, type the height property of the filament to "60px". and put the statement terminator
+CODE: height: 60px;
+
+STEP THIRTY-FOUR: On a new line, type the background-color property of the filament to "#ffcc00". and put the statement terminator
+CODE: background-color: #ffcc00;
+
+STEP THIRTY-FIVE: On a new line, type the border-radius property of the filament to "50%". and put the statement terminator
+CODE: border-radius: 50%;
+
+STEP THIRTY-SIX: On a new line, type the position property of the filament to "absolute". and put the statement terminator
+CODE: position: absolute;
+
+STEP THIRTY-SEVEN: On a new line, type the top property of the filament to "50%". and put the statement terminator
+CODE: top: 50%;
+
+STEP THIRTY-EIGHT: On a new line, type the left property of the filament to "50%". and put the statement terminator
+CODE: left: 50%;
+
+STEP THIRTY-NINE: On a new line, type the transform property of the filament to "translate(-50%, -50%)". and put the statement terminator
+CODE: transform: tanslate(-50%, -50%);
+
+STEP FOURTY: On a new line, type the box-shadow property of the filament to "0 0 20px rgba(255, 204, 0, 0.5)" to create a subtle glow effect. and put the statement terminator
+CODE: box-shadow: 0 0 20px rgba(255, 204, 0, 0.5);
+
+STEP FOURTY-ONE: On a new line, type the closing curly bracket "}"
+CODE: }
+
+STEP FOURTY-TWO: On a new line, type the next selector which is a class ".base" with an open curly bracket '{'
+CODE: .base {
+
+STEP FOURTY-THREE: On a new line, type the width property of the base to "60%". and put the statement terminator
+CODE: width: 60%;
+
+STEP FOURTY-FOUR: On a new line, type the height property of the base to "30%". and put the statement terminator
+CODE: height: 30%;
+
+STEP FOURTY-FIVE: On a new line, type the background-color property of the base to "#333333". and put the statement terminator
+CODE: background-color: #333333;
+
+STEP FOURTY-SIX: On a new line, type the border-radius property of the base to "0 0 15px 15px". and put the statement terminator
+CODE: border-radius: 0 0 15px 15px;
+
+STEP FOURTY-SEVEN: On a new line, type the margin-top property of the base to "-10px". and put the statement terminator
+CODE: margin-top: -10px;
+
+STEP FOURTY-EIGHT: On a new line, type the closing curly bracket "}"
+CODE: }
+
+ STEP FOURTY-NINE; On a new line, type the closing 'head' tag.
+ CODE: '</head>
+
+STEP FIFTY: On a new line, type the opening 'body' tag.
+CODE: '<body>'
+
+STEP FIFTY-ONE:Inside the body tag,we will now add the html element for the lightbulb. On a new line, type the div element with the the class name "lightbulb".
+CODE: <div class="lightbulb">
+
+STEP FIFTY-TWO: On a new line, type another div element with te class name "bulb".
+CODE: <div class="bulb">
+
+STEP FIFTY-THREE: On a new line, type another div element with the class name "filament",
+CODE: <div class="filament">
+
+STEP FIFTY-FOUR: On the same line, add the closing 'div' tag.
+CODE: <div class="filament"></div>
+
+STEP FIFTY-FIVE: On a new line, type the closing 'div' tag.
+CODE: </div>
+
+STEP FIFTY-SIX: On a new line, type another div element with the class name "base",
+CODE: <div class="base">
+
+STEP FIFTY-SEVEN: On the same line, add the closing 'div' tag
+CODE: <div class="base"></div>
+
+STEP FIFTY-EIGHT: On a new line, type the closing 'div' tag.
+CODE: </div>
+
+STEP FIFTY-NINE: On a new line, type the closing 'body' tag.
+CODE: </body>
+
+STEP SIXTY: On a new line, type the closing 'html' tag.
+CODE: </html>
+
+-->
